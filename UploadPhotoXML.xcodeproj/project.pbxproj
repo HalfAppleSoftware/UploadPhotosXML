@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59663B6115D028FC0044524C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59663B6015D028FC0044524C /* UIKit.framework */; };
+		59663B6315D028FC0044524C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59663B6215D028FC0044524C /* Foundation.framework */; };
+		59663B6515D028FC0044524C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59663B6415D028FC0044524C /* CoreGraphics.framework */; };
+		59663B6B15D028FC0044524C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59663B6915D028FC0044524C /* InfoPlist.strings */; };
+		59663B6D15D028FC0044524C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59663B6C15D028FC0044524C /* main.m */; };
+		59663B7115D028FC0044524C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59663B7015D028FC0044524C /* AppDelegate.m */; };
+		59663B7415D028FC0044524C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59663B7315D028FC0044524C /* ViewController.m */; };
+		59663B7715D028FC0044524C /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59663B7515D028FC0044524C /* ViewController_iPhone.xib */; };
+		59663B7A15D028FC0044524C /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59663B7815D028FC0044524C /* ViewController_iPad.xib */; };
+		59663B8215D028FD0044524C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59663B8115D028FD0044524C /* SenTestingKit.framework */; };
+		59663B8315D028FD0044524C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59663B6015D028FC0044524C /* UIKit.framework */; };
+		59663B8415D028FD0044524C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59663B6215D028FC0044524C /* Foundation.framework */; };
+		59663B8C15D028FD0044524C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59663B8A15D028FD0044524C /* InfoPlist.strings */; };
+		59663B8F15D028FD0044524C /* UploadPhotoXMLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59663B8E15D028FD0044524C /* UploadPhotoXMLTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59663B8515D028FD0044524C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59663B5315D028FC0044524C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59663B5B15D028FC0044524C;
+			remoteInfo = UploadPhotoXML;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		59663B5C15D028FC0044524C /* UploadPhotoXML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UploadPhotoXML.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		59663B6015D028FC0044524C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		59663B6215D028FC0044524C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		59663B6415D028FC0044524C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		59663B6815D028FC0044524C /* UploadPhotoXML-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UploadPhotoXML-Info.plist"; sourceTree = "<group>"; };
+		59663B6A15D028FC0044524C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		59663B6C15D028FC0044524C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		59663B6E15D028FC0044524C /* UploadPhotoXML-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UploadPhotoXML-Prefix.pch"; sourceTree = "<group>"; };
+		59663B6F15D028FC0044524C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		59663B7015D028FC0044524C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		59663B7215D028FC0044524C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		59663B7315D028FC0044524C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		59663B7615D028FC0044524C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		59663B7915D028FC0044524C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		59663B8015D028FD0044524C /* UploadPhotoXMLTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UploadPhotoXMLTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59663B8115D028FD0044524C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		59663B8915D028FD0044524C /* UploadPhotoXMLTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UploadPhotoXMLTests-Info.plist"; sourceTree = "<group>"; };
+		59663B8B15D028FD0044524C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		59663B8D15D028FD0044524C /* UploadPhotoXMLTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadPhotoXMLTests.h; sourceTree = "<group>"; };
+		59663B8E15D028FD0044524C /* UploadPhotoXMLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadPhotoXMLTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59663B5915D028FC0044524C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59663B6115D028FC0044524C /* UIKit.framework in Frameworks */,
+				59663B6315D028FC0044524C /* Foundation.framework in Frameworks */,
+				59663B6515D028FC0044524C /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59663B7C15D028FD0044524C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59663B8215D028FD0044524C /* SenTestingKit.framework in Frameworks */,
+				59663B8315D028FD0044524C /* UIKit.framework in Frameworks */,
+				59663B8415D028FD0044524C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		59663B5115D028FC0044524C = {
+			isa = PBXGroup;
+			children = (
+				59663B6615D028FC0044524C /* UploadPhotoXML */,
+				59663B8715D028FD0044524C /* UploadPhotoXMLTests */,
+				59663B5F15D028FC0044524C /* Frameworks */,
+				59663B5D15D028FC0044524C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59663B5D15D028FC0044524C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59663B5C15D028FC0044524C /* UploadPhotoXML.app */,
+				59663B8015D028FD0044524C /* UploadPhotoXMLTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59663B5F15D028FC0044524C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59663B6015D028FC0044524C /* UIKit.framework */,
+				59663B6215D028FC0044524C /* Foundation.framework */,
+				59663B6415D028FC0044524C /* CoreGraphics.framework */,
+				59663B8115D028FD0044524C /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59663B6615D028FC0044524C /* UploadPhotoXML */ = {
+			isa = PBXGroup;
+			children = (
+				59663B6F15D028FC0044524C /* AppDelegate.h */,
+				59663B7015D028FC0044524C /* AppDelegate.m */,
+				59663B7215D028FC0044524C /* ViewController.h */,
+				59663B7315D028FC0044524C /* ViewController.m */,
+				59663B7515D028FC0044524C /* ViewController_iPhone.xib */,
+				59663B7815D028FC0044524C /* ViewController_iPad.xib */,
+				59663B6715D028FC0044524C /* Supporting Files */,
+			);
+			path = UploadPhotoXML;
+			sourceTree = "<group>";
+		};
+		59663B6715D028FC0044524C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				59663B6815D028FC0044524C /* UploadPhotoXML-Info.plist */,
+				59663B6915D028FC0044524C /* InfoPlist.strings */,
+				59663B6C15D028FC0044524C /* main.m */,
+				59663B6E15D028FC0044524C /* UploadPhotoXML-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59663B8715D028FD0044524C /* UploadPhotoXMLTests */ = {
+			isa = PBXGroup;
+			children = (
+				59663B8D15D028FD0044524C /* UploadPhotoXMLTests.h */,
+				59663B8E15D028FD0044524C /* UploadPhotoXMLTests.m */,
+				59663B8815D028FD0044524C /* Supporting Files */,
+			);
+			path = UploadPhotoXMLTests;
+			sourceTree = "<group>";
+		};
+		59663B8815D028FD0044524C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				59663B8915D028FD0044524C /* UploadPhotoXMLTests-Info.plist */,
+				59663B8A15D028FD0044524C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59663B5B15D028FC0044524C /* UploadPhotoXML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59663B9215D028FD0044524C /* Build configuration list for PBXNativeTarget "UploadPhotoXML" */;
+			buildPhases = (
+				59663B5815D028FC0044524C /* Sources */,
+				59663B5915D028FC0044524C /* Frameworks */,
+				59663B5A15D028FC0044524C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UploadPhotoXML;
+			productName = UploadPhotoXML;
+			productReference = 59663B5C15D028FC0044524C /* UploadPhotoXML.app */;
+			productType = "com.apple.product-type.application";
+		};
+		59663B7F15D028FD0044524C /* UploadPhotoXMLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59663B9515D028FD0044524C /* Build configuration list for PBXNativeTarget "UploadPhotoXMLTests" */;
+			buildPhases = (
+				59663B7B15D028FD0044524C /* Sources */,
+				59663B7C15D028FD0044524C /* Frameworks */,
+				59663B7D15D028FD0044524C /* Resources */,
+				59663B7E15D028FD0044524C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59663B8615D028FD0044524C /* PBXTargetDependency */,
+			);
+			name = UploadPhotoXMLTests;
+			productName = UploadPhotoXMLTests;
+			productReference = 59663B8015D028FD0044524C /* UploadPhotoXMLTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59663B5315D028FC0044524C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = org;
+			};
+			buildConfigurationList = 59663B5615D028FC0044524C /* Build configuration list for PBXProject "UploadPhotoXML" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 59663B5115D028FC0044524C;
+			productRefGroup = 59663B5D15D028FC0044524C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59663B5B15D028FC0044524C /* UploadPhotoXML */,
+				59663B7F15D028FD0044524C /* UploadPhotoXMLTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59663B5A15D028FC0044524C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59663B6B15D028FC0044524C /* InfoPlist.strings in Resources */,
+				59663B7715D028FC0044524C /* ViewController_iPhone.xib in Resources */,
+				59663B7A15D028FC0044524C /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59663B7D15D028FD0044524C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59663B8C15D028FD0044524C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		59663B7E15D028FD0044524C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59663B5815D028FC0044524C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59663B6D15D028FC0044524C /* main.m in Sources */,
+				59663B7115D028FC0044524C /* AppDelegate.m in Sources */,
+				59663B7415D028FC0044524C /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59663B7B15D028FD0044524C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59663B8F15D028FD0044524C /* UploadPhotoXMLTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59663B8615D028FD0044524C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59663B5B15D028FC0044524C /* UploadPhotoXML */;
+			targetProxy = 59663B8515D028FD0044524C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59663B6915D028FC0044524C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59663B6A15D028FC0044524C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		59663B7515D028FC0044524C /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59663B7615D028FC0044524C /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		59663B7815D028FC0044524C /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59663B7915D028FC0044524C /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		59663B8A15D028FD0044524C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59663B8B15D028FD0044524C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59663B9015D028FD0044524C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		59663B9115D028FD0044524C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59663B9315D028FD0044524C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UploadPhotoXML/UploadPhotoXML-Prefix.pch";
+				INFOPLIST_FILE = "UploadPhotoXML/UploadPhotoXML-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		59663B9415D028FD0044524C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UploadPhotoXML/UploadPhotoXML-Prefix.pch";
+				INFOPLIST_FILE = "UploadPhotoXML/UploadPhotoXML-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		59663B9615D028FD0044524C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UploadPhotoXML.app/UploadPhotoXML";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UploadPhotoXML/UploadPhotoXML-Prefix.pch";
+				INFOPLIST_FILE = "UploadPhotoXMLTests/UploadPhotoXMLTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		59663B9715D028FD0044524C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UploadPhotoXML.app/UploadPhotoXML";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UploadPhotoXML/UploadPhotoXML-Prefix.pch";
+				INFOPLIST_FILE = "UploadPhotoXMLTests/UploadPhotoXMLTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59663B5615D028FC0044524C /* Build configuration list for PBXProject "UploadPhotoXML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59663B9015D028FD0044524C /* Debug */,
+				59663B9115D028FD0044524C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59663B9215D028FD0044524C /* Build configuration list for PBXNativeTarget "UploadPhotoXML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59663B9315D028FD0044524C /* Debug */,
+				59663B9415D028FD0044524C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		59663B9515D028FD0044524C /* Build configuration list for PBXNativeTarget "UploadPhotoXMLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59663B9615D028FD0044524C /* Debug */,
+				59663B9715D028FD0044524C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59663B5315D028FC0044524C /* Project object */;
+}
