@@ -10,4 +10,11 @@
 
 @interface HistoryObject : NSObject
 
+@property (nonatomic) int Id;
+@property (nonatomic, strong) NSString *desc;
+@property (nonatomic, strong) NSString *detail;
+@property (nonatomic, strong) NSString *price;
+@property (nonatomic, strong) NSString *filePath;
+
+
 @end

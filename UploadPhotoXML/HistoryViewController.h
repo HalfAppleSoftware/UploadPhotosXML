@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CustomScrollView.h"
 
 @interface HistoryViewController : UIViewController
+@property (strong, nonatomic) IBOutlet CustomScrollView *myScroll;
 
 @end

@@ -10,4 +10,10 @@
 
 @implementation HistoryObject
 
+@synthesize Id;
+@synthesize desc;
+@synthesize detail;
+@synthesize price;
+@synthesize filePath;
+
 @end

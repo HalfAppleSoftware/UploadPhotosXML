@@ -21,6 +21,19 @@
 		59663B8415D028FD0044524C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59663B6215D028FC0044524C /* Foundation.framework */; };
 		59663B8C15D028FD0044524C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59663B8A15D028FD0044524C /* InfoPlist.strings */; };
 		59663B8F15D028FD0044524C /* UploadPhotoXMLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59663B8E15D028FD0044524C /* UploadPhotoXMLTests.m */; };
+		59663B9B15D02A1B0044524C /* HistoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59663B9915D02A1B0044524C /* HistoryViewController.m */; };
+		59663B9C15D02A1B0044524C /* HistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59663B9A15D02A1B0044524C /* HistoryViewController.xib */; };
+		59663B9F15D02A3E0044524C /* HistoryViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59663B9E15D02A3E0044524C /* HistoryViewController_iPad.xib */; };
+		59663BAE15D041FC0044524C /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 59663BAB15D041FC0044524C /* NSData+Base64.m */; };
+		59663BAF15D041FC0044524C /* NSString+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 59663BAD15D041FC0044524C /* NSString+Base64.m */; };
+		59663BBB15D04CDC0044524C /* CustomScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 59663BB815D046440044524C /* CustomScrollView.m */; };
+		59663BBC15D04CE30044524C /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 59663BB115D044E40044524C /* Base64.m */; };
+		59663BBD15D04ECB0044524C /* CustomScrollViewElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 59663BB615D046440044524C /* CustomScrollViewElement.m */; };
+		59663BBF15D058020044524C /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 59663BBE15D058020044524C /* libsqlite3.dylib */; };
+		59663BC215D0644D0044524C /* HistoryObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 59663BC115D0644D0044524C /* HistoryObject.m */; };
+		59663BC615D1567E0044524C /* HistoryObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59663BC415D1567E0044524C /* HistoryObjectViewController.m */; };
+		59663BC715D1567E0044524C /* HistoryObjectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59663BC515D1567E0044524C /* HistoryObjectViewController.xib */; };
+		59663BC915D156B90044524C /* HistoryObjectViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59663BC815D156B90044524C /* HistoryObjectViewController_iPad.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +67,27 @@
 		59663B8B15D028FD0044524C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		59663B8D15D028FD0044524C /* UploadPhotoXMLTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UploadPhotoXMLTests.h; sourceTree = "<group>"; };
 		59663B8E15D028FD0044524C /* UploadPhotoXMLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UploadPhotoXMLTests.m; sourceTree = "<group>"; };
+		59663B9815D02A1B0044524C /* HistoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryViewController.h; sourceTree = "<group>"; };
+		59663B9915D02A1B0044524C /* HistoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryViewController.m; sourceTree = "<group>"; };
+		59663B9A15D02A1B0044524C /* HistoryViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewController.xib; sourceTree = "<group>"; };
+		59663B9E15D02A3E0044524C /* HistoryViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryViewController_iPad.xib; sourceTree = "<group>"; };
+		59663BAA15D041FC0044524C /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		59663BAB15D041FC0044524C /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		59663BAC15D041FC0044524C /* NSString+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Base64.h"; sourceTree = "<group>"; };
+		59663BAD15D041FC0044524C /* NSString+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64.m"; sourceTree = "<group>"; };
+		59663BB015D044E40044524C /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		59663BB115D044E40044524C /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		59663BB515D046440044524C /* CustomScrollViewElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomScrollViewElement.h; sourceTree = "<group>"; };
+		59663BB615D046440044524C /* CustomScrollViewElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomScrollViewElement.m; sourceTree = "<group>"; };
+		59663BB715D046440044524C /* CustomScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomScrollView.h; sourceTree = "<group>"; };
+		59663BB815D046440044524C /* CustomScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomScrollView.m; sourceTree = "<group>"; };
+		59663BBE15D058020044524C /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		59663BC015D0644D0044524C /* HistoryObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryObject.h; sourceTree = "<group>"; };
+		59663BC115D0644D0044524C /* HistoryObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryObject.m; sourceTree = "<group>"; };
+		59663BC315D1567E0044524C /* HistoryObjectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryObjectViewController.h; sourceTree = "<group>"; };
+		59663BC415D1567E0044524C /* HistoryObjectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryObjectViewController.m; sourceTree = "<group>"; };
+		59663BC515D1567E0044524C /* HistoryObjectViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryObjectViewController.xib; sourceTree = "<group>"; };
+		59663BC815D156B90044524C /* HistoryObjectViewController_iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HistoryObjectViewController_iPad.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59663BBF15D058020044524C /* libsqlite3.dylib in Frameworks */,
 				59663B6115D028FC0044524C /* UIKit.framework in Frameworks */,
 				59663B6315D028FC0044524C /* Foundation.framework in Frameworks */,
 				59663B6515D028FC0044524C /* CoreGraphics.framework in Frameworks */,
@@ -83,6 +118,7 @@
 		59663B5115D028FC0044524C = {
 			isa = PBXGroup;
 			children = (
+				59663BBE15D058020044524C /* libsqlite3.dylib */,
 				59663B6615D028FC0044524C /* UploadPhotoXML */,
 				59663B8715D028FD0044524C /* UploadPhotoXMLTests */,
 				59663B5F15D028FC0044524C /* Frameworks */,
@@ -113,6 +149,8 @@
 		59663B6615D028FC0044524C /* UploadPhotoXML */ = {
 			isa = PBXGroup;
 			children = (
+				59663BB415D046220044524C /* Custom Scroll View Component */,
+				59663BA915D041DF0044524C /* Base64 */,
 				59663B6F15D028FC0044524C /* AppDelegate.h */,
 				59663B7015D028FC0044524C /* AppDelegate.m */,
 				59663B7215D028FC0044524C /* ViewController.h */,
@@ -120,6 +158,7 @@
 				59663B7515D028FC0044524C /* ViewController_iPhone.xib */,
 				59663B7815D028FC0044524C /* ViewController_iPad.xib */,
 				59663B6715D028FC0044524C /* Supporting Files */,
+				59663B9D15D02A200044524C /* History */,
 			);
 			path = UploadPhotoXML;
 			sourceTree = "<group>";
@@ -152,6 +191,47 @@
 				59663B8A15D028FD0044524C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59663B9D15D02A200044524C /* History */ = {
+			isa = PBXGroup;
+			children = (
+				59663B9815D02A1B0044524C /* HistoryViewController.h */,
+				59663B9915D02A1B0044524C /* HistoryViewController.m */,
+				59663B9A15D02A1B0044524C /* HistoryViewController.xib */,
+				59663B9E15D02A3E0044524C /* HistoryViewController_iPad.xib */,
+				59663BC015D0644D0044524C /* HistoryObject.h */,
+				59663BC115D0644D0044524C /* HistoryObject.m */,
+				59663BC315D1567E0044524C /* HistoryObjectViewController.h */,
+				59663BC415D1567E0044524C /* HistoryObjectViewController.m */,
+				59663BC515D1567E0044524C /* HistoryObjectViewController.xib */,
+				59663BC815D156B90044524C /* HistoryObjectViewController_iPad.xib */,
+			);
+			name = History;
+			sourceTree = "<group>";
+		};
+		59663BA915D041DF0044524C /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				59663BB015D044E40044524C /* Base64.h */,
+				59663BB115D044E40044524C /* Base64.m */,
+				59663BAA15D041FC0044524C /* NSData+Base64.h */,
+				59663BAB15D041FC0044524C /* NSData+Base64.m */,
+				59663BAC15D041FC0044524C /* NSString+Base64.h */,
+				59663BAD15D041FC0044524C /* NSString+Base64.m */,
+			);
+			name = Base64;
+			sourceTree = "<group>";
+		};
+		59663BB415D046220044524C /* Custom Scroll View Component */ = {
+			isa = PBXGroup;
+			children = (
+				59663BB515D046440044524C /* CustomScrollViewElement.h */,
+				59663BB615D046440044524C /* CustomScrollViewElement.m */,
+				59663BB715D046440044524C /* CustomScrollView.h */,
+				59663BB815D046440044524C /* CustomScrollView.m */,
+			);
+			name = "Custom Scroll View Component";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +308,10 @@
 				59663B6B15D028FC0044524C /* InfoPlist.strings in Resources */,
 				59663B7715D028FC0044524C /* ViewController_iPhone.xib in Resources */,
 				59663B7A15D028FC0044524C /* ViewController_iPad.xib in Resources */,
+				59663B9C15D02A1B0044524C /* HistoryViewController.xib in Resources */,
+				59663B9F15D02A3E0044524C /* HistoryViewController_iPad.xib in Resources */,
+				59663BC715D1567E0044524C /* HistoryObjectViewController.xib in Resources */,
+				59663BC915D156B90044524C /* HistoryObjectViewController_iPad.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,6 +349,12 @@
 				59663B6D15D028FC0044524C /* main.m in Sources */,
 				59663B7115D028FC0044524C /* AppDelegate.m in Sources */,
 				59663B7415D028FC0044524C /* ViewController.m in Sources */,
+				59663B9B15D02A1B0044524C /* HistoryViewController.m in Sources */,
+				59663BBB15D04CDC0044524C /* CustomScrollView.m in Sources */,
+				59663BBC15D04CE30044524C /* Base64.m in Sources */,
+				59663BBD15D04ECB0044524C /* CustomScrollViewElement.m in Sources */,
+				59663BC215D0644D0044524C /* HistoryObject.m in Sources */,
+				59663BC615D1567E0044524C /* HistoryObjectViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,6 +363,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				59663B8F15D028FD0044524C /* UploadPhotoXMLTests.m in Sources */,
+				59663BAE15D041FC0044524C /* NSData+Base64.m in Sources */,
+				59663BAF15D041FC0044524C /* NSString+Base64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +471,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UploadPhotoXML/UploadPhotoXML-Prefix.pch";
 				INFOPLIST_FILE = "UploadPhotoXML/UploadPhotoXML-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,7 +484,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "UploadPhotoXML/UploadPhotoXML-Prefix.pch";
 				INFOPLIST_FILE = "UploadPhotoXML/UploadPhotoXML-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -448,6 +544,7 @@
 				59663B9415D028FD0044524C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		59663B9515D028FD0044524C /* Build configuration list for PBXNativeTarget "UploadPhotoXMLTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +553,7 @@
 				59663B9715D028FD0044524C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

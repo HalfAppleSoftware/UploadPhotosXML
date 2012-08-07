@@ -33,11 +33,12 @@
 
 @interface CustomScrollView : UIScrollView 
 {
-    id <CustomScrollViewProtocol> dataSource;
+    //id <CustomScrollViewProtocol> __unsafe_unretained dataSource;
     int elementsCount;
     int currentViewIndex;
     NSMutableArray *views_map;
     NSMutableArray *viewsCache;
+    CustomScrollViewDelegate *inner_delegate;
 }
 
 - (void) removeAllItems;
@@ -47,7 +48,7 @@
 @property (nonatomic) BOOL isVertical;
 @property (nonatomic) BOOL isHorizontal;
 
-@property (nonatomic, assign) id dataSource;
+@property (nonatomic, assign)  id dataSource;
 @property (nonatomic, assign) int elementsCount;
 @property (nonatomic, assign) int currentViewIndex;
 

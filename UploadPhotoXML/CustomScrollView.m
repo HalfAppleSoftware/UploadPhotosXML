@@ -70,18 +70,18 @@
 
 - (void) reloadData
 {
-    if (!dataSource)
+    if (!self.dataSource)
         return;
     if (!self.isVertical) 
         self.isHorizontal = YES;
     if (!self.isHorizontal)
         self.isVertical = YES;
     
-    for (UIView *subview in self.subviews)
+    for (UIView *subview in self.subviews)  {
         [subview removeFromSuperview];
+    }
     
-    
-    CustomScrollViewDelegate *inner_delegate = [[CustomScrollViewDelegate alloc] init];
+    inner_delegate = [[CustomScrollViewDelegate alloc] init];
     
     self.delegate = inner_delegate;
     
@@ -91,7 +91,7 @@
     // initial loading. Getting first element here
     viewsCache = nil;
     views_map = nil;
-    self.elementsCount = [dataSource numberOfElementsInCustomScrollView:self];
+    self.elementsCount = [self.dataSource numberOfElementsInCustomScrollView:self];
     views_map = [[NSMutableArray alloc] initWithCapacity:self.elementsCount];
     viewsCache = [[NSMutableArray alloc] initWithCapacity:self.elementsCount];
     
@@ -106,16 +106,11 @@
     old_index = 0;
     
     self.currentViewIndex = 0;
-    [self placeView:[dataSource customScrollView:self viewAtIndex:0] index:0];
-    [self placeView:[dataSource customScrollView:self viewAtIndex:1] index:1];    
-    [self placeView:[dataSource customScrollView:self viewAtIndex:2] index:2];    
     
-    
-   /* [[NSNotificationCenter defaultCenter] addObserver: self 
-                                             selector: @selector(deviceBeganRotateSelector:) 
-                                                 name: UIDeviceOrientationDidChangeNotification 
-                                               object: nil];*/
-
+    [self placeView:[self.dataSource customScrollView:self viewAtIndex:0] index:0];
+    [self placeView:[self.dataSource customScrollView:self viewAtIndex:1] index:1];
+    [self placeView:[self.dataSource customScrollView:self viewAtIndex:2] index:2];
+     
 }
 
 - (void) placeView: (UIView *)newView index:(int)viewIndex {
@@ -144,7 +139,7 @@
                     return; // no, already have this one
                 }
             }
-            CustomScrollViewElement *tmp = [[[CustomScrollViewElement alloc] init] autorelease];
+            CustomScrollViewElement *tmp = [[CustomScrollViewElement alloc] init];
             tmp.view = newView;
             tmp.viewIndexInScrollView = viewIndex;
             [viewsCache addObject:tmp]; // yes, put it in cache with current index
@@ -156,7 +151,7 @@
 {
     if (newIndex > old_index) { // scroll right
         
-        if (!dataSource)
+        if (!self.dataSource)
             return;
         
         // maybe it's not good, but if caching will be turned off during process? so less chance to crash
@@ -173,13 +168,16 @@
             }
             if (!foundViewInCache && [dataSource respondsToSelector:@selector(customScrollView:viewAtIndex:)]) {
                 // view was taken from datasource, not found in cache
-                tmp = [dataSource customScrollView:self viewAtIndex:newIndex+1];
+                if (newIndex<self.elementsCount) {
+                    tmp = [dataSource customScrollView:self viewAtIndex:newIndex+1];
+                }
             }
         }
         else
             if ([dataSource respondsToSelector:@selector(customScrollView:viewAtIndex:)])
-                tmp = [dataSource customScrollView:self viewAtIndex:newIndex+1];
-        
+                if (newIndex<self.elementsCount) {
+                    tmp = [dataSource customScrollView:self viewAtIndex:newIndex+1];
+                }
         for (int i = 0; i < views_map.count; ++i)  {
             if ([[views_map objectAtIndex:i] integerValue] != newIndex &&
                 [[views_map objectAtIndex:i] integerValue] != newIndex-1)   {
@@ -193,7 +191,7 @@
     
     if (old_index > newIndex) { // scrolling left
         
-        if (!dataSource)
+        if (!self.dataSource)
             return;
         
         UIView *tmp = nil;
@@ -207,13 +205,16 @@
                 }
             }
             if (!foundViewInCache && [dataSource respondsToSelector:@selector(customScrollView:viewAtIndex:)]) {
-                tmp = [dataSource customScrollView:self viewAtIndex:newIndex-1];
+                if (newIndex!=0) {
+                    tmp = [dataSource customScrollView:self viewAtIndex:newIndex-1];
+                }
             }
         }
         else
             if ([dataSource respondsToSelector:@selector(customScrollView:viewAtIndex:)])
-                tmp = [dataSource customScrollView:self viewAtIndex:newIndex-1];
-        
+                if (newIndex!=0) {
+                    tmp = [dataSource customScrollView:self viewAtIndex:newIndex-1];
+                }
         for (int i = 0; i < views_map.count; ++i)  {
             if ([[views_map objectAtIndex:i] integerValue] != newIndex &&
                 [[views_map objectAtIndex:i] integerValue] != newIndex+1)   {
@@ -225,7 +226,6 @@
         [self placeView:tmp index:newIndex-1];
         
     }
-
 }
 
 
@@ -244,6 +244,7 @@
             [viewsCache removeAllObjects];
         [views_map removeAllObjects];
         [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
+        [self.subviews makeObjectsPerformSelector:@selector(viewDidUnload)];
         
         // set new bounds for scrollView
         if (self.isHorizontal) {
@@ -254,10 +255,13 @@
             [self setContentSize:CGSizeMake(self.frame.size.width, self.frame.size.height*self.elementsCount)];
             [self setContentOffset:CGPointMake(0, yOffset) animated:NO];
         }
-        
-        [self placeView:[dataSource customScrollView:self viewAtIndex:self.currentViewIndex-1] index:self.currentViewIndex-1];
+        if (self.currentViewIndex!=0) {
+            [self placeView:[dataSource customScrollView:self viewAtIndex:self.currentViewIndex-1] index:self.currentViewIndex-1];
+        }
         [self placeView:[dataSource customScrollView:self viewAtIndex:self.currentViewIndex] index:self.currentViewIndex];
-        [self placeView:[dataSource customScrollView:self viewAtIndex:self.currentViewIndex+1] index:self.currentViewIndex+1];
+        if (self.currentViewIndex+1<self.elementsCount) {
+            [self placeView:[dataSource customScrollView:self viewAtIndex:self.currentViewIndex+1] index:self.currentViewIndex+1];
+        }
     }
     self.old_height = [NSNumber numberWithInt:(int)self.frame.size.height];
     self.old_width = [NSNumber numberWithInt:(int)self.frame.size.width];
@@ -272,17 +276,8 @@
         [viewsCache removeAllObjects];
     [views_map removeAllObjects];
     [self.subviews makeObjectsPerformSelector:@selector(removeFromSuperview)];
-}
-
-- (void) dealloc
-{
-    old_width = nil;
-    old_height = nil;
+    [self.subviews makeObjectsPerformSelector:@selector(viewDidUnload)];
     
-    viewsCache = nil;
-    views_map = nil;
-    [super dealloc];
 }
-
 
 @end

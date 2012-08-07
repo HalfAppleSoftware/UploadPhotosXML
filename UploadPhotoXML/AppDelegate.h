@@ -16,4 +16,7 @@
 
 @property (strong, nonatomic) ViewController *viewController;
 
+-(void)postImageToServer:(UIImage*)imageToPost description:(NSString*)desc detail:(NSString*)detail price:(NSString*)price;
+-(void)saveImageToHistory:(UIImage*)imageToPost description:(NSString*)desc detail:(NSString*)detail price:(NSString*)price;
+
 @end
